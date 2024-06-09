@@ -14,7 +14,7 @@ const LoginLayout = styled.main`
       rgba(237, 158, 246, 0.761),
       rgba(107, 206, 228, 0.673)
     ),
-    url("../../public/bg.jpg");
+    url("./bg.jpg");
   background-size: 100% auto;
 `;
 

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import GlobalStyles from "./styles/GlobalStyles";
-import Dashboard from "./pages/Dashboard";
+// import Dashboard from "./pages/Dashboard";
 import Bookings from "./pages/Bookings";
 import Hotels from "./pages/Hotels";
 import Users from "./pages/Users";
@@ -32,9 +32,9 @@ function App() {
               </ProtectedRoute>
             }
           >
-            <Route index element={<Navigate replace to="dashboard" />} />
+            <Route index element={<Navigate replace to="hotels" />} />
 
-            <Route path="dashboard" element={<Dashboard />} />
+            {/* <Route path="dashboard" element={<Dashboard />} /> */}
             <Route path="hotels" element={<Hotels />} />
             <Route path="bookings" element={<Bookings />} />
             <Route path="bookings/:bookingId" element={<Booking />} />

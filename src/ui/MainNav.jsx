@@ -67,19 +67,19 @@ function MainNav() {
           </StyledNavLink>
         </li> */}
         <li>
-          <StyledNavLink to="/bookings">
-            <span>
-              <HiOutlineCalendarDays />
-            </span>
-            Bookings
-          </StyledNavLink>
-        </li>
-        <li>
           <StyledNavLink to="/hotels">
             <span>
               <HiOutlineHomeModern />
             </span>
             Hotels
+          </StyledNavLink>
+        </li>
+        <li>
+          <StyledNavLink to="/bookings">
+            <span>
+              <HiOutlineCalendarDays />
+            </span>
+            Bookings
           </StyledNavLink>
         </li>
 

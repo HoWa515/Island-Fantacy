@@ -10,7 +10,7 @@ export function useLogin() {
     onSuccess: (user) => {
       // user is the data received
       console.log(user);
-      navigate("/dashboard", { replace: true });
+      navigate("/hotels", { replace: true });
     },
     onError: (err) => {
       console.log("Error", err),

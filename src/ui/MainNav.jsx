@@ -83,14 +83,14 @@ function MainNav() {
           </StyledNavLink>
         </li>
 
-        <li>
+        {/* <li>
           <StyledNavLink to="/users">
             <span>
               <HiOutlineUsers />
             </span>
             Users
           </StyledNavLink>
-        </li>
+        </li> */}
 
         <li>
           <StyledNavLink to="/settings">

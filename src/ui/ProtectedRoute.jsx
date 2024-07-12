@@ -20,13 +20,11 @@ function ProtectedRoute({ children }) {
 
   useEffect(
     function () {
-      // if (!isAuthenticated && !isLoading)
-
-      if (!user) {
+      if (!isAuthenticated && !isLoading) {
         navigate("/login");
       }
     },
-    [navigate, user]
+    [navigate, isAuthenticated, isLoading]
   );
 
   //3.While loading,show a spiner

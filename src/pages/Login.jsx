@@ -11,8 +11,8 @@ const LoginLayout = styled.main`
   justify-content: center;
   gap: 3.2rem;
   background-image: linear-gradient(
-      rgba(237, 158, 246, 0.761),
-      rgba(107, 206, 228, 0.673)
+      rgba(249, 191, 255, 0.88),
+      rgba(135, 228, 249, 0.88)
     ),
     url("./bg.jpg");
   background-size: 100% auto;

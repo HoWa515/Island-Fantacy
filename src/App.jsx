@@ -33,7 +33,6 @@ function App() {
             }
           >
             <Route index element={<Navigate replace to="hotels" />} />
-
             {/* <Route path="dashboard" element={<Dashboard />} /> */}
             <Route path="hotels" element={<Hotels />} />
             <Route path="bookings" element={<Bookings />} />

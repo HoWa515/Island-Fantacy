@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import styled from "styled-components";
 import { useUser } from "../features/authentication/useUser";
 import Spinner from "./Spinner";
@@ -20,20 +21,20 @@ function ProtectedRoute({ children }) {
 
   useEffect(
     function () {
-      if (!isAuthenticated && !isLoading) {
+      if (!isAuthenticated) {
         navigate("/login");
       }
     },
-    [navigate, isAuthenticated, isLoading]
+    [navigate, isAuthenticated]
   );
 
-  //3.While loading,show a spiner
-  if (isLoading)
-    return (
-      <FullPage>
-        <Spinner />
-      </FullPage>
-    );
+  //   //3.While loading,show a spiner
+  //   if (isLoading)
+  //     return (
+  //       <FullPage>
+  //         <Spinner />
+  //       </FullPage>
+  //     );
 
   //4.If there is valid user,render the app
   if (isAuthenticated) return children;

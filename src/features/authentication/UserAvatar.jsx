@@ -27,7 +27,7 @@ function UserAvatar() {
   return (
     <StyledUserAvatar>
       <Avatar src={"default-user.jpg"} alt={"username"}></Avatar>
-      <span>{`Hello,${user.email.split("@").at(0)}`}</span>
+      <span>{`Hello,admin`}</span>
     </StyledUserAvatar>
   );
 }

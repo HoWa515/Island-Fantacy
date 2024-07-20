@@ -6,21 +6,21 @@ import FormRowVertical from "../../ui/FormRowVertical";
 import { useLogin } from "./useLogin";
 import SpinnerMini from "../../ui/SpinnerMini";
 function LoginForm() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("admin@island.com");
+  const [password, setPassword] = useState("1234");
   const { login, isLoading } = useLogin();
 
   function handleSubmit(e) {
     e.preventDefault();
     if (!email || !password) return;
     login(
-      { email, password },
-      {
-        onSettled: () => {
-          setEmail("");
-          setPassword("");
-        },
-      }
+      { email, password }
+      // {
+      //   onSettled: () => {
+      //     setEmail("");
+      //     setPassword("");
+      //   },
+      // }
     );
   }
 

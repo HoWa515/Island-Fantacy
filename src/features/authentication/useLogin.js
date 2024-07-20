@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { login as loginApi } from "../../services/apiAuth";
 import toast from "react-hot-toast";
 /*eslint-disable*/
+async function delay() {
+  await new Promise((res) => setTimeout(res, 1000));
+}
 export function useLogin() {
   const navigate = useNavigate();
   const { mutate: login, isLoading } = useMutation({

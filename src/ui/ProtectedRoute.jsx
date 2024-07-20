@@ -28,13 +28,13 @@ function ProtectedRoute({ children }) {
     [navigate, isAuthenticated]
   );
 
-  //   //3.While loading,show a spiner
-  //   if (isLoading)
-  //     return (
-  //       <FullPage>
-  //         <Spinner />
-  //       </FullPage>
-  //     );
+  //3.While loading,show a spiner
+  if (isLoading)
+    return (
+      <FullPage>
+        <Spinner />
+      </FullPage>
+    );
 
   //4.If there is valid user,render the app
   if (isAuthenticated) return children;

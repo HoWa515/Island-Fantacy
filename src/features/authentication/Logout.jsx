@@ -10,19 +10,18 @@ const StyledLogoutIcon = styled.span`
 `;
 function Logout() {
   const { logout, isLoading } = useLogout();
-  return null;
-  // return (
-  //   <ButtonIcon disabled={isLoading} onClick={logout}>
-  //     {isLoading ? (
-  //       <SpinnerMini />
-  //     ) : (
-  //       <StyledLogoutIcon>
-  //         Logout:
-  //         <HiArrowRightOnRectangle />
-  //       </StyledLogoutIcon>
-  //     )}
-  //   </ButtonIcon>
-  // );
+  return (
+    <ButtonIcon disabled={isLoading} onClick={logout}>
+      {isLoading ? (
+        <SpinnerMini />
+      ) : (
+        <StyledLogoutIcon>
+          Logout:
+          <HiArrowRightOnRectangle />
+        </StyledLogoutIcon>
+      )}
+    </ButtonIcon>
+  );
 }
 
 export default Logout;

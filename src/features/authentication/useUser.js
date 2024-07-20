@@ -9,7 +9,7 @@ export function useUser() {
   return {
     isLoading,
     user,
-    isAuthenticated: true,
-    // isAuthenticated: user?.role === "authenticated",
+    // isAuthenticated: true,
+    isAuthenticated: user?.role === "authenticated",
   };
 }

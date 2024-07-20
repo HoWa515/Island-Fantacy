@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import GlobalStyles from "./styles/GlobalStyles";
 // import Dashboard from "./pages/Dashboard";

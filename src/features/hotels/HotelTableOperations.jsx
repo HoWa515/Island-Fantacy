@@ -15,7 +15,7 @@ function HotelTableOperations() {
         options={[
           { value: "regularPrice-asc", label: "Price: low-high" },
           { value: "regularPrice-desc", label: "Price: high-low" },
-          { value: "maxCapacity-asc", label: "Capacity: high-low" },
+          { value: "maxCapacity-asc", label: "Capacity: low-high" },
           { value: "maxCapacity-desc", label: "Capacity: high-low" },
         ]}
       />
